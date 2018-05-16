@@ -21,12 +21,12 @@ import javax.inject.Inject
 class HomePageActivity : DaggerAppCompatActivity() {
 
     /*  @Inject*/
-    lateinit var weatherViewModel: WeatherViewModel
+    private lateinit var weatherViewModel: WeatherViewModel
 
     @Inject
     lateinit var weatherViewModelFactory: WeatherViewModelFactory
 
-    var compositeDisposable: CompositeDisposable? = null
+    private var compositeDisposable: CompositeDisposable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +55,7 @@ class HomePageActivity : DaggerAppCompatActivity() {
 
     }
 
-    fun refresh() {
+    private fun refresh() {
         compositeDisposable?.add(
                 weatherViewModel.getWeather(true).subscribeBy(
                         onSuccess = {
