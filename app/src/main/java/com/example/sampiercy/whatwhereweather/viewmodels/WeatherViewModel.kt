@@ -13,12 +13,8 @@ class WeatherViewModel @Inject constructor(private val weatherRepository: Weathe
     open fun getWeather(refresh: Boolean): Single<WeatherResponse> {
         if(!refresh) weatherResponse?.let { return Single.just(weatherResponse) }
         return weatherRepository.getWeatherAroundLocation().flatMap {
-            setWeatherResponse(it)
+            weatherResponse = it
             Single.just(it)
         }
-    }
-
-    fun setWeatherResponse(weatherResponse: WeatherResponse){
-        this.weatherResponse = weatherResponse
     }
 }
