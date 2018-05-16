@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WhatWhereWeather</string>
+    <string name="city_title">City:</string>
+    <string name="weather_type_title">Weather Type:</string>
+    <string name="temperature_title">Temperature:</string>
+    <string name="humidity_title">Humidity:</string>
+    <string name="wind_speed_title">Wind Speed:</string>
+    <string name="cloud_cover_title">Cloud Cover:</string>
+    <string name="weather_detail_title">Ultra In Depth Weather For %1$s</string>
+    <string name="menu_refresh">Refresh</string>
+</resources>

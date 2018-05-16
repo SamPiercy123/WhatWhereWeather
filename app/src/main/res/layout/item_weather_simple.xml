@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_padding_vertical"
+    android:layout_marginEnd="@dimen/card_padding_horizontal"
+    android:layout_marginStart="@dimen/card_padding_horizontal"
+    android:layout_marginTop="@dimen/card_padding_vertical"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/cityNameTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/textview_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:text="@string/city_title"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintWidth_default="wrap"
+        />
+
+    <TextView
+        android:id="@+id/cityNameValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/textview_padding"
+        app:layout_constraintStart_toEndOf="@id/cityNameTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintHeight_default="wrap"
+        />
+
+    <TextView
+        android:id="@+id/weatherTypeTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/textview_padding"
+        app:layout_constraintTop_toBottomOf="@id/cityNameTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:text="@string/weather_type_title"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintWidth_default="wrap"
+        />
+
+    <TextView
+        android:id="@+id/weatherTypeValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/textview_padding"
+        app:layout_constraintStart_toEndOf="@id/weatherTypeTitle"
+        app:layout_constraintTop_toBottomOf="@id/cityNameTitle"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintHeight_default="wrap"
+        />
+
+    <TextView
+        android:id="@+id/temperatureTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/textview_padding"
+        app:layout_constraintTop_toBottomOf="@id/weatherTypeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:text="@string/temperature_title"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintWidth_default="wrap"
+        />
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/textview_padding"
+        app:layout_constraintStart_toEndOf="@id/temperatureTitle"
+        app:layout_constraintTop_toBottomOf="@id/weatherTypeTitle"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintHeight_default="wrap"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
